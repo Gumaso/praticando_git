@@ -1,0 +1,75 @@
+Tudo sobre Git
+Para iniciar nosso projeto, primeiros temos que ter um repositorio local, que é armanezado em nosso HD, e um repositorio remoto que é o Git Hub
+
+INICIAR REPOSITORIO LOCAL:
+    Na pasta selecionada, em que será feito o projeto, no terminal faça:
+    git init
+    git config --global init.defaultBranch main
+
+    ______________________________________
+    o comando (git init) é usado para iniciar nosso repositorio
+    _____________________________________________
+    o comando git config --global init.defaultBranch main é usado para alterar o atributo global do git,
+    ou seja, estamos configurando o Branch padrão como main
+PARA CRIAR UM BRANCH NOVO:
+    git branch (aqui vai o nome do branch que queremos)
+    Com esse comando, nós criaremos um novo branch em nosso repositorio
+TROCAR BRANCH:
+    git checkout (nome do branch)
+    Com esse comando trocaremos para o branch que digitarmos
+VERIFICAR QUAL BRANCH ESTAMOS:
+    git branch
+
+    Com esse comando saberemos em qual branch estamos, pois estará com o * e em verde, e quais branchs existem
+
+VERIFICAR AS MUDANÇAS FEITAS, A SEREM FEITAS E O REPOSITORIO:
+    git status
+
+    __________________________________
+    com esse comando nós veremos o status do nosso repositorio, ou seja, o que mudou,
+    foi deletado, o que foi adicionado, ou como está
+MESCLAR BRANCHS
+    git merge (branch que queremos que as alterações sejam adicionadas)
+
+
+FAZER MUDANÇAS
+    git add (nome do arquivo)
+    git add -A
+
+    ___________________________________
+    com o comando git add (arquivo) nós iremos adicionar para depois salvar o arquivo que digitamos
+    com o comando git add -A nós iremos adicionar todas as mudanças/adições de arquivos no nosso repositorio ao git,
+    para que sejam salvas depois com o commit
+CONECTANDO A UM REPOSITORIO REMOTO
+    git remote add (nome que será tratado o repositorio remoto, normalmente é origin) "aqui dentro a url do repositorio"
+
+DESCONECTANDO DE UM REPOSITORIO REMOTO:
+    git remote remove (nome do repositorio remoto dado anteriormente, normalmente origin )
+SALVAR MUDANÇAS
+    git commit -m "mensagem"
+    git commit --amend
+
+    _____________________________
+    com o comando git commit -m ("mensagem") nós iremos criar um novo commit no repositorio com uma mensagem
+    resumindo o que foi feito
+
+    com o comando git commit --amend ao invés de criarmos um novo commit, nós iremos reabrir o ultimo commit
+    e salvar dentro deles as novas alterações, e podemos também mudar a mensagem
+    ou apenas logo depois de fazer o commit, podemos usar ele para modificar a mensagem do commit que fizemos
+MOSTRAR MUDANÇAS
+    git show
+    git show HEAD
+    git show (número do commit)
+
+    ________________________
+    git show e git show HEAD, são iguais, mostrarão as mudanças feitas no ultimo commit que fizemos
+
+    git show (numero do commit) mostrará as mudanças no commit que especificamos
+MOSTRAR TODOS OS COMMITS
+    git log
+    git log --oneline
+
+    git log mostrará todos os commits com data, autor e mensagem
+    git log --oneline mostrará todos os commit com o número dele e a mensagem
+
+
